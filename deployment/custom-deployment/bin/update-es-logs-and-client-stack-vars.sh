@@ -6,11 +6,11 @@ source .env
 
 AWS_REGION=$(jq -r '.stack.region' ./package.json)
 
-echo "==update %%CLIENT_APP_BUCKET%% in stack with $2=="
+echo "==update %%CLIENT_APP_BUCKET%% in stack with $ClientAppBucketName=="
 replace="s/%%CLIENT_APP_BUCKET%%/$ClientAppBucketName/g"
 sed -i -e $replace ./lib/cdk-textract-client-stack.js
 
-echo "==update Amazon Elasticsearch Cluster ($ElasticSearchCluster) with log streams to Log Groups: $ElasticSearchSearchLogGroup and $ElasticSearchIndexLogGroup"
+echo "==update Amazon Elasticsearch Cluster ($ElasticSearchCluster)  in $AWS_REGION with log streams to Log Groups: $ElasticSearchSearchLogGroup and $ElasticSearchIndexLogGroup"
 INDEX_LOG_ARN=$(aws logs describe-log-groups --region $AWS_REGION --log-group-name $ElasticSearchIndexLogGroup | jq -r '.logGroups[0].arn')
 SEARCH_LOG_ARN=$(aws logs describe-log-groups --region $AWS_REGION --log-group-name $ElasticSearchSearchLogGroup | jq -r '.logGroups[0].arn')
 

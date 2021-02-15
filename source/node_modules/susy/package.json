@@ -1,0 +1,52 @@
+{
+  "name": "susy",
+  "title": "Susy",
+  "version": "3.0.5",
+  "description": "Sass power-tools for web layout.",
+  "homepage": "http://oddbird.net/susy",
+  "author": "Miriam Eric Suzanne <miriam@oddbird.net>",
+  "main": "sass/_susy.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oddbird/susy"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-lint": "^1.12.1",
+    "sass-true": "^4.0.0",
+    "sassdoc": "^2.5.0",
+    "sassdoc-theme-herman": "^3.0.0"
+  },
+  "keywords": [
+    "layout",
+    "grid",
+    "sass",
+    "responsive",
+    "rwd",
+    "semantic",
+    "eyeglass-module"
+  ],
+  "eyeglass": {
+    "sassDir": "sass",
+    "exports": false,
+    "name": "susy",
+    "needs": "^1.0.0"
+  },
+  "scripts": {
+    "test": "npm run test-libsass && npm run compile",
+    "test-libsass": "node_modules/.bin/mocha",
+    "test-compile": "./node_modules/node-sass/bin/node-sass test/scss/test.scss test/css/test.css --include-path ./sass/",
+    "ag": "./node_modules/node-sass/bin/node-sass test/scss/ag.scss test/css/ag.css --include-path ./sass/",
+    "svg": "./node_modules/node-sass/bin/node-sass test/scss/svg.scss test/css/svg.css --include-path ./sass/",
+    "compile": "npm run test-compile && npm run ag && npm run svg",
+    "lint": "node_modules/.bin/sass-lint -vq",
+    "sassdoc": "sassdoc sass/",
+    "commit": "npm run lint && npm test && npm run sassdoc"
+  },
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/oddbird/susy/issues"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,320 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "epl-dus-testClientStack": {
+        "id": "epl-dus-testClientStack",
+        "path": "epl-dus-testClientStack",
+        "children": {
+          "ClientAppBucket": {
+            "id": "ClientAppBucket",
+            "path": "epl-dus-testClientStack/ClientAppBucket"
+          },
+          "epl-dus-testClientStackDeployClientAppS3Bucket": {
+            "id": "epl-dus-testClientStackDeployClientAppS3Bucket",
+            "path": "epl-dus-testClientStack/epl-dus-testClientStackDeployClientAppS3Bucket",
+            "children": {
+              "CustomResourceHandler": {
+                "id": "CustomResourceHandler",
+                "path": "epl-dus-testClientStack/epl-dus-testClientStackDeployClientAppS3Bucket/CustomResourceHandler"
+              },
+              "Asset1": {
+                "id": "Asset1",
+                "path": "epl-dus-testClientStack/epl-dus-testClientStackDeployClientAppS3Bucket/Asset1",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "epl-dus-testClientStack/epl-dus-testClientStackDeployClientAppS3Bucket/Asset1/Stage"
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "epl-dus-testClientStack/epl-dus-testClientStackDeployClientAppS3Bucket/Asset1/AssetBucket"
+                  }
+                }
+              },
+              "CustomResource": {
+                "id": "CustomResource",
+                "path": "epl-dus-testClientStack/epl-dus-testClientStackDeployClientAppS3Bucket/CustomResource",
+                "children": {
+                  "Default": {
+                    "id": "Default",
+                    "path": "epl-dus-testClientStack/epl-dus-testClientStackDeployClientAppS3Bucket/CustomResource/Default"
+                  }
+                }
+              }
+            }
+          },
+          "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C": {
+            "id": "Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
+            "path": "epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "s3:GetObject*",
+                                    "s3:GetBucket*",
+                                    "s3:List*"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":s3:::",
+                                          {
+                                            "Ref": "AssetParameters1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013S3Bucket2DFD5245"
+                                          }
+                                        ]
+                                      ]
+                                    },
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":s3:::",
+                                          {
+                                            "Ref": "AssetParameters1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013S3Bucket2DFD5245"
+                                          },
+                                          "/*"
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "s3:GetObject*",
+                                    "s3:GetBucket*",
+                                    "s3:List*",
+                                    "s3:DeleteObject*",
+                                    "s3:PutObject*",
+                                    "s3:Abort*"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":s3:::epl-dus-teststack-epldusteststackclientapps3bucke-8nthd08fmpr0"
+                                        ]
+                                      ]
+                                    },
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":s3:::epl-dus-teststack-epldusteststackclientapps3bucke-8nthd08fmpr0/*"
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+                            "roles": [
+                              {
+                                "Ref": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/Stage"
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Code/AssetBucket"
+                  }
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParametersa9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ffS3Bucket848A1F31"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersa9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ffS3VersionKey983DBE96"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersa9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ffS3VersionKey983DBE96"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "handler": "index.handler",
+                    "role": {
+                      "Fn::GetAtt": [
+                        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+                        "Arn"
+                      ]
+                    },
+                    "runtime": "python3.6",
+                    "timeout": 900
+                  }
+                }
+              }
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "epl-dus-testClientStack/AssetParameters",
+            "children": {
+              "a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff": {
+                "id": "a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff",
+                "path": "epl-dus-testClientStack/AssetParameters/a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "epl-dus-testClientStack/AssetParameters/a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "epl-dus-testClientStack/AssetParameters/a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "epl-dus-testClientStack/AssetParameters/a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff/ArtifactHash"
+                  }
+                }
+              },
+              "1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013": {
+                "id": "1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013",
+                "path": "epl-dus-testClientStack/AssetParameters/1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "epl-dus-testClientStack/AssetParameters/1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "epl-dus-testClientStack/AssetParameters/1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "epl-dus-testClientStack/AssetParameters/1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013/ArtifactHash"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "version": "4.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "epl-dus-testClientStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "epl-dus-testClientStack.template.json"
+      },
+      "metadata": {
+        "/epl-dus-testClientStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.ad57345399d69af4ebac4c2013281d51651d333e8f5f3383c3416c0f392b9eb7.zip",
+              "id": "a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff",
+              "packaging": "file",
+              "sourceHash": "a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff",
+              "s3BucketParameter": "AssetParametersa9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ffS3Bucket848A1F31",
+              "s3KeyParameter": "AssetParametersa9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ffS3VersionKey983DBE96",
+              "artifactHashParameter": "AssetParametersa9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ffArtifactHash08605F5E"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/construct-compat.js:306:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:129:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:57:25)",
+              "CdkTextractClientStack.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack.js:348:33)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:61:31)",
+              "new Asset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:44)",
+              "AssetCode.bind (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/code.js:136:26)",
+              "new Function (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:33)",
+              "SingletonFunction.ensureLambda (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:51:16)",
+              "new SingletonFunction (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:19:36)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:19:25)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013",
+              "id": "1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013",
+              "packaging": "zip",
+              "sourceHash": "1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013",
+              "s3BucketParameter": "AssetParameters1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013S3Bucket2DFD5245",
+              "s3KeyParameter": "AssetParameters1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013S3VersionKey3F6D8123",
+              "artifactHashParameter": "AssetParameters1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013ArtifactHashA877A6D3"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/construct-compat.js:306:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:129:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:57:25)",
+              "CdkTextractClientStack.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack.js:348:33)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:61:31)",
+              "new Asset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:44)",
+              "Object.bind (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:36:31)",
+              "/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:29:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:29:39)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/epl-dus-testClientStackDeployClientAppS3Bucket/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "epldustestClientStackDeployClientAppS3BucketCustomResourceD9CC7E1C",
+            "trace": [
+              "new CustomResource (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/custom-resource.js:23:25)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:39:9)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-iam/lib/role.js:41:22)",
+              "new Function (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/function.js:61:35)",
+              "SingletonFunction.ensureLambda (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:51:16)",
+              "new SingletonFunction (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:19:36)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:19:25)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-iam/lib/policy.js:30:26)",
+              "Role.addToPrincipalPolicy (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-iam/lib/role.js:164:34)",
+              "Function.addToPrincipal (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-iam/lib/grant.js:68:65)",
+              "Function.addToPrincipalOrResource (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-iam/lib/grant.js:38:30)",
+              "Import.grant (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3/lib/bucket.js:295:29)",
+              "Import.grantRead (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3/lib/bucket.js:181:21)",
+              "/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:49",
+              "Array.forEach (<anonymous>)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:30:17)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/function.js:72:26)",
+              "SingletonFunction.ensureLambda (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:51:16)",
+              "new SingletonFunction (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:19:36)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:19:25)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/AssetParameters/a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ffS3Bucket848A1F31",
+            "trace": [
+              "new FileAssetParameters (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:119:22)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:57:25)",
+              "CdkTextractClientStack.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack.js:348:33)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:61:31)",
+              "new Asset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:44)",
+              "AssetCode.bind (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/code.js:136:26)",
+              "new Function (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:33)",
+              "SingletonFunction.ensureLambda (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:51:16)",
+              "new SingletonFunction (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:19:36)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:19:25)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/AssetParameters/a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ffS3VersionKey983DBE96",
+            "trace": [
+              "new FileAssetParameters (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:119:22)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:57:25)",
+              "CdkTextractClientStack.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack.js:348:33)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:61:31)",
+              "new Asset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:44)",
+              "AssetCode.bind (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/code.js:136:26)",
+              "new Function (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:33)",
+              "SingletonFunction.ensureLambda (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:51:16)",
+              "new SingletonFunction (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:19:36)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:19:25)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/AssetParameters/a9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ff/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa9125fa9a40550c71cde90bd478cc23091e868067a12380c1df0827d013ad2ffArtifactHash08605F5E",
+            "trace": [
+              "new FileAssetParameters (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:119:22)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:57:25)",
+              "CdkTextractClientStack.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack.js:348:33)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:61:31)",
+              "new Asset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:44)",
+              "AssetCode.bind (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/code.js:136:26)",
+              "new Function (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/function.js:69:33)",
+              "SingletonFunction.ensureLambda (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:51:16)",
+              "new SingletonFunction (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.js:19:36)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:19:25)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/AssetParameters/1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013S3Bucket2DFD5245",
+            "trace": [
+              "new FileAssetParameters (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:119:22)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:57:25)",
+              "CdkTextractClientStack.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack.js:348:33)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:61:31)",
+              "new Asset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:44)",
+              "Object.bind (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:36:31)",
+              "/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:29:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:29:39)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/AssetParameters/1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013S3VersionKey3F6D8123",
+            "trace": [
+              "new FileAssetParameters (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:119:22)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:57:25)",
+              "CdkTextractClientStack.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack.js:348:33)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:61:31)",
+              "new Asset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:44)",
+              "Object.bind (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:36:31)",
+              "/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:29:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:29:39)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/epl-dus-testClientStack/AssetParameters/1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1d8e184e8c85e89f045dd5dbe38ff90bf2d97a36abfda3bbc38ee9c57cd12013ArtifactHashA877A6D3",
+            "trace": [
+              "new FileAssetParameters (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:119:22)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:57:25)",
+              "CdkTextractClientStack.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack.js:348:33)",
+              "LegacyStackSynthesizer.addFileAsset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:61:31)",
+              "new Asset (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:30:44)",
+              "Object.bind (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/source.js:36:31)",
+              "/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:29:62",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.js:29:39)",
+              "new CdkTextractClientStack (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/lib/cdk-textract-client-stack.js:25:45)",
+              "Object.<anonymous> (/home/jabrielcjones/dev/belle_fleur/document-understanding-solution/source/bin/deploy-client-stack.js:22:1)",
+              "Module._compile (internal/modules/cjs/loader.js:999:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)",
+              "Module.load (internal/modules/cjs/loader.js:863:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:708:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.42.0",
+      "@aws-cdk/cx-api": "1.42.0",
+      "@aws-cdk/cloud-assembly-schema": "1.42.0",
+      "@aws-cdk/cdk-assets-schema": "1.42.0",
+      "@aws-cdk/aws-s3": "1.42.0",
+      "@aws-cdk/aws-events": "1.42.0",
+      "@aws-cdk/aws-iam": "1.42.0",
+      "@aws-cdk/region-info": "1.42.0",
+      "@aws-cdk/aws-kms": "1.42.0",
+      "@aws-cdk/aws-s3-deployment": "1.42.0",
+      "@aws-cdk/aws-lambda": "1.42.0",
+      "@aws-cdk/aws-cloudwatch": "1.42.0",
+      "@aws-cdk/aws-ec2": "1.42.0",
+      "@aws-cdk/aws-ssm": "1.42.0",
+      "@aws-cdk/aws-logs": "1.42.0",
+      "@aws-cdk/aws-sqs": "1.42.0",
+      "@aws-cdk/aws-s3-assets": "1.42.0",
+      "@aws-cdk/assets": "1.42.0",
+      "jsii-runtime": "node.js/v12.20.1"
+    }
+  }
+}
